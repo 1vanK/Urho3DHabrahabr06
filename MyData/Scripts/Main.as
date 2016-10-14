@@ -60,6 +60,7 @@ void Start()
 
     renderer.SetDefaultRenderPath(cache.GetResource("XMLFile", "RenderPaths/MyForward.xml"));
     Viewport@ viewport = Viewport(scene_, cameraNode.GetComponent("Camera"));
+    viewport.renderPath.Append(cache.GetResource("XMLFile", "PostProcess/FXAA3.xml"));
     renderer.viewports[0] = viewport;
 }
 
