@@ -15,11 +15,11 @@
     </command>
     <command type="scenepass" pass="alpha" vertexlights="true" sort="backtofront" metadata="alpha" />
     <command type="scenepass" pass="postalpha" sort="backtofront" />
-    
+
     <!-- Добавлено -->
     <command type="scenepass" pass="visiblemask" output="visiblemask" />
     <command type="scenepass" pass="fullmask" output="fullmask" />
-    <command type="quad"  tag="WallHack" vs="WallHack" ps="WallHack" output="viewport">
+    <command type="quad" tag="WallHack" vs="WallHack" ps="WallHack" output="viewport">
         <texture unit="diffuse" name="viewport" />
         <texture unit="normal" name="fullmask" />
         <texture unit="specular" name="visiblemask" />
