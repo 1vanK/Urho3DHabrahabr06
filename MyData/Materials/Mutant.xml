@@ -1,0 +1,7 @@
+<material>
+    <technique name="Techniques/DiffNormalWallHack.xml" />
+    <texture unit="diffuse" name="Models/Mutant/Textures/Mutant_diffuse.jpg" />
+    <texture unit="normal" name="Models/Mutant/Textures/Mutant_normal.jpg" />
+    <parameter name="MatDiffColor" value="1 1 1 1" />
+    <parameter name="MatSpecColor" value="1 1 1 100" />
+</material>
