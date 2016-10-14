@@ -91,4 +91,7 @@ void HandleUpdate(StringHash eventType, VariantMap& eventData)
 
     if (input.keyPress[KEY_SPACE])
         renderer.viewports[0].renderPath.ToggleEnabled("WallHack");
+
+    if (input.keyPress[KEY_ESCAPE])
+        engine.Exit();
 }
