@@ -1,9 +1,9 @@
 <renderpath>
     <!-- Добавлено -->
-    <rendertarget name="visiblemask" sizedivisor="1 1" format="a" />
-    <rendertarget name="fullmask" sizedivisor="1 1" format="a" />
-    <command type="clear" color="0 0 0 0" output="visiblemask" />
-    <command type="clear" color="0 0 0 0" output="fullmask" />
+    <rendertarget name="visiblemask" tag="WallHack" sizedivisor="1 1" format="a" />
+    <rendertarget name="fullmask" tag="WallHack" sizedivisor="1 1" format="a" />
+    <command type="clear" tag="WallHack" color="0 0 0 0" output="visiblemask" />
+    <command type="clear" tag="WallHack" color="0 0 0 0" output="fullmask" />
 
     <!-- Исходное содержимое -->
     <command type="clear" color="fog" depth="1.0" stencil="0" />
@@ -17,8 +17,8 @@
     <command type="scenepass" pass="postalpha" sort="backtofront" />
 
     <!-- Добавлено -->
-    <command type="scenepass" pass="visiblemask" output="visiblemask" />
-    <command type="scenepass" pass="fullmask" output="fullmask" />
+    <command type="scenepass" tag="WallHack" pass="visiblemask" output="visiblemask" />
+    <command type="scenepass" tag="WallHack" pass="fullmask" output="fullmask" />
     <command type="quad" tag="WallHack" vs="WallHack" ps="WallHack" output="viewport">
         <texture unit="diffuse" name="viewport" />
         <texture unit="normal" name="fullmask" />
